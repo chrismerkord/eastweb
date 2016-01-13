@@ -53,8 +53,16 @@ read_project_summary <- function(db_con, project_name) {
   project_name <- format_project_name(project_name)
 
   # extract information for one project
-  projects %>%
-    dplyr::filter(proj_name == project_name) %>%
-    as.list()
+  projects_filtered <-
+    projects %>%
+    dplyr::filter(proj_name == project_name)
+
+  # make sure only one project was found
+  if(nrow(projects_filtered) == 0)
+    stop("No project with the name", project_name, "was found.")
+  if(nrow(projects_filtered) > 1)
+    stop("More than one project with the name", project_name, "was found.")
+
+  as.list(projects_filtered)
 
 }
