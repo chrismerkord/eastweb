@@ -49,7 +49,7 @@ eastweb_data <- function(plugin = c("TRMM3B42", "TRMM3b42RT",
     dplyr::transmute(Index_Name = Name,
                      AreaCode,  AreaName,
                      Year, DayOfYear,
-                     Count, Max, Min, SqrSum, StdDev) %>%
+                     Count, Max, Mean, Min, SqrSum, StdDev, Sum) %>%
     dplyr::arrange(Index_Name, AreaName, Year, DayOfYear) %>%
     dplyr::rename_(
       .dots = setNames(list("AreaCode", "AreaName"),
