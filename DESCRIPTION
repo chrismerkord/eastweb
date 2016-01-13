@@ -1,0 +1,25 @@
+Package: eastweb
+Type: Package
+Title: Get data from an EASTWeb database into R
+Version: 0.1
+Date: 2016-01-12
+Authors@R: person("Christopher", "Merkord",
+    email = "christopher.merkord@sdstate.edu",
+    role = c("aut", "cre"))
+Description: This package provides functions that let you extract data from a
+    postgreSQL database created by the EASTWeb software program. EASTWeb is a
+    program developed by Yi Liu and Michael Wimberly at South Dakota State
+    University to automatically download and process earth observation data
+    for use in epidemilogical research.
+Imports:
+    DBI,
+    dplyr,
+    RPostgreSQL,
+    stringr
+Suggests:
+    testthat
+URL: http://globalmonitoring.sdstate.edu/epidemia/software.php
+BugReports: https://github.com/chrismerkord/eastweb/issues
+License: To be determined.
+LazyData: TRUE
+RoxygenNote: 5.0.1
