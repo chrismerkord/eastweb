@@ -2,23 +2,23 @@
 % Please edit documentation in R/eastweb_data.R
 \name{eastweb_data}
 \alias{eastweb_data}
-\title{Get data  from an EASTWeb database}
+\title{Get data from an EASTWeb database}
 \usage{
-eastweb_data(project_name, plugin = c("TRMM3B42", "TRMM3b42RT", "ModisLST",
-  "ModisNBAR", "NldasNOAH", "NldasForcing"), user, password,
-  db_name = "epidemiadb", host = "localhost", port = 5432)
+eastweb_data(plugin = c("TRMM3B42", "TRMM3b42RT", "ModisLST", "ModisNBAR",
+  "NldasNOAH", "NldasForcing"), project_name, db_name, user, password,
+  host = "localhost", port = 5432)
 }
 \arguments{
-\item{project_name}{Name of the project. Does not need underscores.}
-
 \item{plugin}{Name of the plugin. Must be one of "TRMM3B42", "TRMM3b42RT",
 "ModisLST", "ModisNBAR", "NldasNOAH", or "NldasForcing".}
+
+\item{project_name}{Name of the project. Does not need underscores.}
+
+\item{db_name}{Name of the database.}
 
 \item{user}{Username.}
 
 \item{password}{Password.}
-
-\item{db_name}{Name of the database.}
 
 \item{host}{Host name. Defaults to "localhost".}
 
@@ -30,7 +30,7 @@ plugin in an EASTWeb project. Even if a project has multiple plugins, each
 one must be queried seperately.
 }
 \description{
-Get data  from an EASTWeb database
+Get data from an EASTWeb database
 }
 \examples{
 
