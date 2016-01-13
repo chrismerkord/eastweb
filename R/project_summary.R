@@ -50,6 +50,8 @@ read_project_summary <- function(db_con, project_name) {
   # read projects from database
   projects <- read_projects(db_con)
 
+  project_name <- format_project_name(project_name)
+
   # extract information for one project
   projects %>%
     dplyr::filter(proj_name == project_name) %>%
