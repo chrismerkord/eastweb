@@ -53,8 +53,8 @@ eastweb_data <- function(plugin = c("TRMM3B42", "TRMM3b42RT",
     dplyr::arrange(Index_Name, AreaName, Year, DayOfYear) %>%
     dplyr::rename_(
       .dots = setNames(list("AreaCode", "AreaName"),
-                       c(project_info$area_code_field,
-                         project_info$area_name_field)))
+                       c(project_summary$area_code_field,
+                         project_summary$area_name_field)))
 
   RPostgreSQL::dbDisconnect(db_con)
 
