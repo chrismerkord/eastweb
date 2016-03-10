@@ -19,7 +19,7 @@ Format a project name as it appears in the Project table in an EASTWeb
 database
 }
 \examples{
-eastweb_proj_name("Project Name")
+format_project_name("Project Name")
 
 }
 

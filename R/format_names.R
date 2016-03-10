@@ -8,7 +8,7 @@
 #' underscores.
 #'
 #' @examples
-#' eastweb_proj_name("Project Name")
+#' format_project_name("Project Name")
 #'
 format_project_name <- function(project_name) {
 
@@ -28,7 +28,7 @@ format_project_name <- function(project_name) {
 #' @importFrom magrittr "%>%"
 #'
 #' @examples
-#' eastweb_proj_name("Project Name", "PluginName")
+#' format_schema_name("Project Name", "PluginName")
 #'
 format_schema_name <- function(project_name,
                                plugin = c("TRMM3B42", "TRMM3b42RT",

@@ -22,7 +22,7 @@ Format a schema name as it appears in the an EASTWeb
 database
 }
 \examples{
-eastweb_proj_name("Project Name", "PluginName")
+format_schema_name("Project Name", "PluginName")
 
 }
 
