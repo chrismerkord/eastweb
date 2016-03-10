@@ -17,8 +17,6 @@
 #' @importFrom magrittr "%>%"
 #' @export
 #'
-#' @examples
-#'
 eastweb_data <- function(plugin = c("TRMM3B42", "TRMM3b42RT",
                                     "ModisLST", "ModisNBAR",
                                     "NldasNOAH", "NldasForcing"),
