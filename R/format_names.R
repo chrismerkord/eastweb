@@ -1,4 +1,3 @@
-
 #' Format a project name as it appears in the Project table in an EASTWeb
 #' database
 #'
@@ -6,6 +5,7 @@
 #'
 #' @return The formatted named of the project. Spaces are converted to
 #' underscores.
+#' @export
 #'
 #' @examples
 #' format_project_name("Project Name")
@@ -26,6 +26,7 @@ format_project_name <- function(project_name) {
 #' together with the plugin name and everything is converted to lower case.
 #'
 #' @importFrom magrittr "%>%"
+#' @export
 #'
 #' @examples
 #' format_schema_name("Project Name", "PluginName")
